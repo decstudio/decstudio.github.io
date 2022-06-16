@@ -1,0 +1,266 @@
+<style>
+   
+            body {
+            margin: 0;
+            display: grid;
+            font-family: roboto;
+            grid-template-columns: 100%;
+            grid-template-rows: 60px auto auto auto auto 400px auto;
+            grid-template-areas:
+            "header"
+            "hero"
+            "sect1"
+            "sect2"
+            "sect3"
+            "newsletter"
+            "footer"
+            }
+            
+            header {
+            grid-area: header;
+            background-color: 262730;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            color: #f7fff7;
+            font-family: roboto;
+            font-size: 12px;
+            z-index: 1;
+            }
+            
+            header ul {
+                margin-right: 22px;
+                }
+                
+            header li {
+                 display: inline;
+                 text-align: center;
+        	     padding-top: 10px;
+                 padding-right: 20px;
+       			 padding-bottom: 20px;
+                 float: right;
+         		 padding-left: 20px;
+                 border-right: 30px;
+                 }
+            
+            hero {
+            	grid-area: hero;
+            	background-color: 262730;
+            	padding: 45px;
+            }
+            
+            section1 {
+            	color: #f7fff7;
+            	grid-area: sect1;
+            	background-color: 262730;
+            	position: relative;
+            }
+            
+            section1 p {
+            font-family: roboto;
+            border-style: solid;
+            position: absolute;
+            top: auto;
+            right: 60px;
+  			font-size: 24px;
+            width: 200;
+  			height: 30;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+            background-color: rgba(35, 150, 127, 0.5);
+            }
+            
+            section1 p2 {
+            font-family: roboto;
+            font-size: 18px;
+            border-style: solid;
+            position: absolute;
+            margin-top: 90px;
+            top: auto;
+            right: 90px;
+  			width: 125;
+  			height: 20;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+            background-color: rgba(35, 150, 127, 0.5);
+            }
+            
+            
+            section2 {
+            color: #f7fff7;
+            position: relative;
+            grid-area: sect2;
+            background-color: 262730;
+            }
+            
+            section2 p {
+            font-family: roboto;
+            border-style: solid;
+            position: absolute;
+            bottom: 55px;
+            left: 60px;
+  			font-size: 24px;
+            width: 200;
+  			height: 30;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+            background-color: rgba(35, 150, 127, 0.5);
+            }
+            
+            section2 p2 {
+            font-family: roboto;
+            font-size: 18px;
+            border-style: solid;
+            position: absolute;
+            margin-top: 90px;
+            bottom: 25px;
+            left: 90px;
+  			width: 125;
+  			height: 20;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+            background-color: rgba(35, 150, 127, 0.5);
+            }
+            
+            section3 {
+            color: #f7fff7;
+            position: relative;
+            grid-area: sect3;
+            background-color: 262730;
+            }
+            
+            section3 p {
+            font-family: roboto;
+            border-style: solid;
+            position: absolute;
+            top: auto;
+            right: 60px;
+  			font-size: 24px;
+            width: 200;
+  			height: 30;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+            background-color: rgba(35, 150, 127, 0.5);
+            }
+            
+            section3 p2 {
+            font-family: roboto;
+            font-size: 18px;
+            border-style: solid;
+            position: absolute;
+            margin-top: 90px;
+            top: auto;
+            right: 90px;
+  			width: 125;
+  			height: 20;
+            text-align: center;
+            padding: 10px;
+            vertical-align: middle;
+            background-color: rgba(35, 150, 127, 0.5);
+            }
+            
+            newsletter {
+            position: relative;
+            grid-area: newsletter;
+            background-color: #f7fff7;
+            }
+            
+            newsletter p  {
+            position: relative;
+            font-weight: bold;
+            text-align:center;
+            font-size: 48px;
+            margin-top:100px;
+            }
+            
+            newsletter p1 {
+            border-style: solid;
+            position: absolute;
+            Top: 170px;
+            left: 25%;
+            right:25%;
+            font-size: 15px;
+           	border-radius: 25px;
+  			border: 2px solid #262730;
+  			padding: 10 10 10 25;
+            top: 170px;
+            height: 15px;
+            background-color: #fff;
+            }
+            
+            .button {
+  			background-color: #fff;
+  			border: none;
+            border-color: #262730;
+  			padding: 7px 7px;
+  			text-align: center;
+  			text-decoration: none;
+  			display: inline-block;
+  			font-size: 15px;
+  			margin: 2px 2px;
+  			transition-duration: 0.4s;
+  			cursor: pointer;
+            position: absolute;
+            left: 25%;
+            top: 220px;
+            }
+            
+            .button5 {
+ 			 background-color: white;
+  			 color: black;
+  		     border: 2px solid #262730;
+             }
+
+		   .button5:hover {
+  			background-color: #262730;
+  			color: white;
+			}
+
+            newsletter p2 {
+            position: absolute;
+            top: 210px;
+            left: 29%;
+            font-size: 12px;
+            }
+            
+            footer {
+            grid-area: footer;
+            position:relative;
+            background-color: 262730;
+            }
+            
+            footer p {
+            color: #f7fff7;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 25px;
+            }
+            
+            footer ul {
+            margin-left: 30%;
+            margin-top: 0px;
+            }
+            
+            footer li {
+            display: inline;
+            text-align: center;
+            }
+            
+            footer li img {
+            padding: 10px;
+            height: 60px;
+            }
+       
+    	 	footer p1 {
+            color: #f7fff7;
+            text-align: center;
+            font-size: 13px;
+            text-justify: center;
+            }
+            
+         </style>
