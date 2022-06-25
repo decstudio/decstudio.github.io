@@ -5,7 +5,7 @@ var modal = document.getElementById("myModal");
        
         function mostraImmagine(imageName) {
           modal.style.display = "block";
-          modalImg.src = "Immagini/" + imageName;
+          modalImg.src = imageName;
           }
 
         var span = document.getElementsByClassName("close")[0];
