@@ -13,7 +13,7 @@
                     "newsletter"
                     "footer";
                   }
-             header {
+         header {
                 grid-area: header;
                 background-color: 262730;
                 position: sticky;
@@ -43,6 +43,7 @@
             header li a {
                 color: #f7fff7;
                 }
+            
 sect1{
 	background-color: #f7fff7;
 	margin: 0 auto;
