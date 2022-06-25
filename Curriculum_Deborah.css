@@ -1,19 +1,22 @@
-  html {
-                margin: 0px;
-                }
+html {
+    margin: 0px;
+    }
             body {
                 margin: 0px;
                 display: grid;
                 font-family: roboto;
-                grid-template-columns: auto;
-                grid-template-rows: 60px auto 400px 170px;
+                background-color: #262730;
+                grid-template-columns: 100%;
+                grid-template-rows: 60px auto auto 400px 170px;
                 grid-template-areas:
                     "header"
                     "sect1"
-                    "newsletter"
-                    "footer";
-                  }
-             header {
+					"sect2"
+					"newsletter"
+                    "footer"
+            }
+            
+            header {
                 grid-area: header;
                 background-color: 262730;
                 position: sticky;
@@ -43,34 +46,48 @@
             header li a {
                 color: #f7fff7;
                 }
-
-sect1{
+descrizione{
+	grid-area: sect1;
 	background-color: #f7fff7;
-	margin: 0 auto;
-}
+	box-sizing: border-box;
+	margin: 0;
+	display: inline;
+	}
 
-h1{
+.column.left {
+  width: 15%;
+margin: 10% 5% auto 15%;
+  float: left;
+ }
+
+.column.right{
+	margin: 10% 15% auto 0;
+	width: 50%;
+	float: right;
+  }
+    
+descrizione div img {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 150px;
+    border-radius: 50%;
+	float: right;
+	}
+descrizione div h1 {
+	font-size: 4vh;
 	color: #23967f;
-	text-align: left;
-	font-size: 3vh;
-	margin: 100px 15% 0 15%;
-	position: relative;
-	}
-
-sect1 p img{
-	float: left;
-	padding: 20px;
-	}
-
-sect1 p{
-	color: #262730;
-	font-size: 2vh;
-	text-align: justify; 
-	margin: 30px 15% 100px;
-	
+	text-align: center;
+	margin-top: 0;
 }
 
-            newsletter {
+descrizione div p {
+	font-size: 2vh;
+	color: #262730;
+	text-align: center;
+	margin-top: 0;
+}
+
+newsletter {
                 position: relative;
                 width: 100%;
                 grid-area: newsletter;
@@ -155,6 +172,8 @@ sect1 p{
                 margin-top: 0px;
                 display: flex;
                 justify-content: center;
+                
+                
             }
             
             footer li {

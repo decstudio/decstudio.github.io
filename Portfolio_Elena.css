@@ -11,10 +11,10 @@ html {
                 grid-template-rows: 60px auto auto auto auto 400px 170px;
                 grid-template-areas:
                     "header"
-                    "hero"
                     "sect1"
                     "sect2"
                     "sect3"
+					"sect4"
                     "newsletter"
                     "footer"
             }
@@ -50,36 +50,13 @@ html {
                 color: #f7fff7;
                 }
                         
-            hero {
-            	grid-area: hero;
-                background-color: #262730;
-                width: 100%;
-		        position: relative;
+            section1 {
+            	grid-area: sect1;
+               position: relative;
             	}
 
-hero p{
-	position: relative;
-    color: #f7fff7;
-    border-style: solid;
-    border-color: #f7fff7;
-    font-size: 36px;
-    width: 300px;
-    height: 60px;
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(35, 150, 127, 0.5);
-    z-index: 1;
-    padding: 10 0 0 0;
-    margin-top: 25%;
-   }
-
-section1{
-    grid-area: sect1;
-    position: absolute;
-}
-
 section1 p{
-    color: #f7fff7;
+	   color: #f7fff7;
     border-style: solid;
     border-color: #f7fff7;
     position: absolute;
@@ -96,10 +73,9 @@ section1 p{
     transform: translate(-50%, -50%)
    }
 
-section2:{
+section2{
     grid-area: sect2;
     position: relative;
-    
 }
 
 section2 p{
@@ -118,14 +94,38 @@ section2 p{
     margin-top: 25%;
     left: 50%;
     transform: translate(-50%, -50%)
-}
+   }
 
-section3:{
+section3 {
     grid-area: sect3;
     position: relative;
+    
 }
 
 section3 p{
+    color: #f7fff7;
+    border-style: solid;
+    border-color: #f7fff7;
+    position: absolute;
+    font-size: 36px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(35, 150, 127, 0.5);
+    z-index: 1;
+    padding: 10 0 0 0;
+    margin-top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+section4 {
+    grid-area: sect4;
+    position: relative;
+}
+
+section4 p{
     color: #f7fff7;
     border-style: solid;
     border-color: #f7fff7;
