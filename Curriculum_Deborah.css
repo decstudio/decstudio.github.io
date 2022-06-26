@@ -7,7 +7,7 @@ html {
                 font-family: roboto;
                 background-color: #262730;
                 grid-template-columns: 100%;
-                grid-template-rows: 60px auto auto 400px 170px;
+                grid-template-rows: 60px 400px auto 400px 170px;
                 grid-template-areas:
                     "header"
                     "sect1"
@@ -89,6 +89,7 @@ descrizione div p {
 
 curriculum{
 	grid-area: sect2;
+	background-color: #f7fff7;
 }
 
 .colonna {
@@ -99,15 +100,26 @@ curriculum{
 
 .colonna.side.left {
   width: 40%;
+	padding: 0;
+  margin: 0;
 }
 
 .colonna.middle {
   width: 20%;
-}
+  padding: 0;
+  margin: 0;
+	}
 
 .colonna.side.right{
     width: 40%;
+	padding: 0;
+  margin: 0;
     }
+
+hidden .colonna.side.left {
+  width: 40%;
+  visibility: hidden;
+}
 
 .row:after {
   content: "";
@@ -115,14 +127,59 @@ curriculum{
   clear: both;
 }
 
-hidden .colonna.side.left {
-  width: 40%;
-  visibility: hidden;
+.descrizione {
+margin-left: 5%;
+margin-right: 5%;
+border-color: #23967f;	
 }
 
 hr{
-margin-left: 40%;
-margin-right: 5%;
+border-top: 4px solid #23967f;
+	margin-left:40%;
+	margin-right: 35px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+hr.sottile{
+	border-top: 2px solid #23967f;
+	margin: 35px;
+}
+curriculum h2{
+	margin-top: 0;
+	text-align: left;
+	color: #262730;
+	font-size: 24px;
+	padding-left: 150px
+}
+
+curriculum p{
+	margin-top: 0;
+	text-align: left;
+	color: #262730;
+	font-size: 16px;
+	padding-right: 150;
+}
+curriculum img{
+	margin-top: 0;
+}
+
+
+curriculum ul{
+	list-style-type: none;
+}
+
+curriculum ul img {
+	height: 25px;
+	margin-top: 0;
+	padding-right: 10px;
+	float: right;
+	
+	display: block;
+}
+
+curriculum ul li{
+	padding: 10px;
 }
 
 newsletter {
