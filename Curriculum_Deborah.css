@@ -87,6 +87,44 @@ descrizione div p {
 	margin-top: 0;
 }
 
+curriculum{
+	grid-area: sect2;
+}
+
+.colonna {
+  float: left;
+  padding: 10px;
+}
+
+
+.colonna.side.left {
+  width: 40%;
+}
+
+.colonna.middle {
+  width: 20%;
+}
+
+.colonna.side.right{
+    width: 40%;
+    }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hidden .colonna.side.left {
+  width: 40%;
+  visibility: hidden;
+}
+
+hr{
+margin-left: 40%;
+margin-right: 5%;
+}
+
 newsletter {
                 position: relative;
                 width: 100%;
