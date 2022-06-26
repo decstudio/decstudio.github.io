@@ -1,19 +1,21 @@
-            html {
-                margin: 0px;
-                }
+html {
+    margin: 0px;
+    }
             body {
                 margin: 0px;
                 display: grid;
                 font-family: roboto;
-                grid-template-columns: auto;
-                grid-template-rows: 60px 400px 600px 400px 170px;
+                background-color: #262730;
+                grid-template-columns: 100%;
+                grid-template-rows: 60px auto 100px 400px 170px;
                 grid-template-areas:
                     "header"
                     "sect1"
-                    "profili"
+					"sect2"
                     "newsletter"
-                    "footer";
-                  }
+                    "footer"
+            }
+            
             header {
                 grid-area: header;
                 background-color: 262730;
@@ -44,83 +46,70 @@
             header li a {
                 color: #f7fff7;
                 }
-            
 
-            sect1{
-                grid-area: sect1;
-                 background-color: #f7fff7; 
-                }
-
-            sect1 img{
-                margin: 45 auto auto auto;
-                padding: 0px;
-                display: flex;
-                justify-content: center;
-                }
-
-            sect1 p{
-                color: #262730;
-                text-align: center;
-                margin-top: 55px;
-                margin-left: 28%;
-                margin-right: 28%;
-                font-size: 16px;
-                display: flex;
-                justify-content: center;
-                }
-
-            profili{
-                grid-area: profili;
-                background-color: #262730;
-                position: relative;
-            }
-
-profili a {
-	color: #262730;
+section{
+	grid-area: sect1;
+	background-color: #f7fff7;
 }
-            
-            .flex-container{
-                display: flex;
-                justify-content: center;
-                background-color: #262730;
-                vertical-align: middle;
-            }
-            .flex-container > div{
-                background-color: #23967F;
-                width: 380px;
-                height: 500px;
-                margin: 50px 20px;
-                text-align: center;
-                font-size: 16px;
-				border-radius: 25px;
-                
-            }  
 
-            .flex-container > div img{
-                margin-top: 38px;
-                border-radius: 50%;
-           }
-            
-            .flex-container > div p {
-                margin: 16% 20% 12%;
-                justify-content: center;
-                line-height: 20px;
-                color: #f7fff7;
-                 
-            }
-            .flex-container > div p1 {
-                font-family: roboto;
-                border-style: hidden;
-                border-bottom-color: #f7fff7;
-                font-size: 18px;
-                margin-top: 60px;
-                padding: 8 82;
-                text-align: center;
-                background-color: #f7fff7;
-				border-radius: 25px;
-           }
+section h1 {
+	font-size: 32px;
+	color: #23967f;
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
 
-            newsletter {
+section h2 {
+	font-size: 20px;
+	color: #262730;
+	text-align: left;
+	margin-left: 60px;
+}
+
+section p{
+	position: relative;
+	font-size: 16px;
+	text-align: justify;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+section img {
+	float: left;
+	max-width: 350px;
+	
+	padding-right: 25px;
+}
+
+section p2{
+	position: absolute;
+	            color: #f7fff7;
+				font-size: 14px;
+                width: 150;
+                height: 20;
+				margin-top: 40;
+	            text-align: center;
+                padding: 10px;
+                background-color: #23967f;
+				border-radius: 25px;
+                left: 50%;
+    			transform: translate(-50%, -50%)
+}
+
+section a{
+	color: #f7fff7;
+	}
+
+.spazio {
+	margin-top: 180px;
+}
+
+sect2 {
+	grid-area: sect2;
+	background-color: #f7fff7;
+}
+
+newsletter {
                 position: relative;
                 width: 100%;
                 grid-area: newsletter;
@@ -205,6 +194,8 @@ profili a {
                 margin-top: 0px;
                 display: flex;
                 justify-content: center;
+                
+                
             }
             
             footer li {
@@ -225,4 +216,3 @@ profili a {
                 justify-content: center;
                 margin-top: 15px;
             }
-            
