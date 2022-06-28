@@ -101,6 +101,9 @@ html {
                 background-color: rgba(35, 150, 127, 0.5);
             }
             
+section1 p2 a {
+    color: #f7fff7;
+}
             
             section2 {
                 color: #f7fff7;
@@ -182,6 +185,10 @@ section2 p2 a {
                 background-color: rgba(35, 150, 127, 0.5);
             }
             
+section3 p2 a {
+    color: #f7fff7;
+}
+
             newsletter {
                 position: relative;
                 width: 100%;

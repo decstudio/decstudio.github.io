@@ -54,7 +54,9 @@ html {
             	grid-area: sect1;
                position: relative;
             	}
-
+a{
+	color: #f7fff7;
+}
 section1 p{
 	   color: #f7fff7;
     border-style: solid;
