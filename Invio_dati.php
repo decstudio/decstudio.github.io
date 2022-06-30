@@ -1,9 +1,8 @@
-<? php
-	$myfile = fopen("newfile.txt", "a") or die("Unable to open file!");
-$txt = "John Doe\n";
+<?php
+$myfile = fopen("newfile.txt", "a") or die("Unable to open file!");
+$txt = "Donald Duck\n";
 fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
+$txt = "Goofy Goof\n";
 fwrite($myfile, $txt);
 fclose($myfile);
-
 ?>
