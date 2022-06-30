@@ -64,6 +64,7 @@ html {
     object-fit: cover;
     transition: all 0.3s ease-out;
     cursor: pointer;
+	max-height: 300px;
 }
 
 .myImg:hover{

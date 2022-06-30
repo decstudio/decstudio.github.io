@@ -134,6 +134,16 @@ margin-right: 5%;
 border-color: #23967f;	
 }
 
+descrizione h1 {
+	font-size: 24px;
+	color: #23967f;
+}
+
+descrizione p {
+	font-size: 16px;
+	color: #262730;
+}
+
 hr{
 border-top: 4px solid #23967f;
 	margin-left:40%;
