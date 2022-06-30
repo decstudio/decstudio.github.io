@@ -100,7 +100,11 @@ html {
                 vertical-align: middle;
                 background-color: rgba(35, 150, 127, 0.5);
             }
-            
+
+            section section1 section2 section3 p a {
+    color: #f7fff7;
+}
+
 section1 p2 a {
     color: #f7fff7;
 }
