@@ -305,14 +305,15 @@ section3 p2:hover{
 	border-radius: 10px;
 	border: none;
 	padding: 10px 50px;
-	 top: 280px;
-	 	left: 50%;
-				transform: translate(-50%);
-
-	
-	
+	top: 280px;
+	left: 50%;
+	transform: translate(-50%);
+	transition: all 0.3s ease-out;
 }
             
+p4 input:hover{
+	background-color: #262730;
+}
             footer {
                 grid-area: footer;
                 position:relative;

@@ -13,3 +13,8 @@ var modal = document.getElementById("myModal");
         span.onclick = function () {
           modal.style.display = "none";
         };
+
+
+function myFunction() {
+  alert("Hello! I am an alert box!");
+}

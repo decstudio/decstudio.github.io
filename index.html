@@ -1,11 +1,12 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="css_home.css">
+		  <link rel="icon" type="image/x-icon" href="/Immagini/favicon2.png">
 	</head>
      <body>
       <header>
          <ul>
-        <img class="img1" src="Immagini/Logo_dec_bianco.png" alt="logo" height="40" border="0"/>
+        <a href="index.html"><img class="img1" src="Immagini/Logo_dec_bianco.png" alt="logo" height="40" border="0"/></a>
            <li> <a href="Contatti.html"> CONTATTI </a> </li>
 		   <li> <a href="Incontri.html">INCONTRI </a></li>
            <li> <a href="News.html">NEWS </a></li>
@@ -39,11 +40,11 @@
     <newsletter>
  	  <p1> NEWSLETTER </p1>
 		
-      <form action="/decstudio.github.io/Invio_dati.php" method="get">
+      <form>
 			 <p> <label> <input name="email" placeholder="La tua e-mail"/></label></p>
-		  <p2><input name="check" type="checkbox" value="Accetto">
+		  <p2><input name="check" type="checkbox" value="Accetto" required="required">
   <label> Accetto le condizioni generali e la politica di riservatezza e le informative sulla privacy</label></p2>
-		  <p4> <input type="submit" value="Invia"></p4>
+		  <p4> <input onclick="myFunction()" type="submit" value="Invia"></p4>
 		 </form>
     </newsletter>
     
@@ -56,6 +57,12 @@
        </ul> 
        <p1>© copyright 2022. All Rights Reserved. Dec Studio.
            <br>Privacy Policy | Cookie </p1>
+		
+		<script>
+function myFunction() {
+  alert("Grazie per averci inviato i tuoi dati :)");
+}
+</script>
               
    </footer>
     </body>
