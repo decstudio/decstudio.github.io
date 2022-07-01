@@ -1,18 +1,20 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="Incontri.css">
+ <link rel="icon" type="image/x-icon" href="/Immagini/favicon2.png">
 	</head>
      <body>
       <header>
          <ul>
-         <img class="img1" src="https://cdn.discordapp.com/attachments/971766283207057508/979724326817394698/Logo_dec_copia.png" alt="logo" height="40" border="0" alt="" />
-           <li> CONTATTI </li>
-		   <li> <a href="Incontri_interno.html">INCONTRI </a></li>
+        <a href="index.html"><img class="img1" src="Immagini/Logo_dec_bianco.png" alt="logo" height="40" border="0"/></a>
+           <li> <a href="Contatti.html"> CONTATTI </a> </li>
+		   <li> <a href="Incontri.html">INCONTRI </a></li>
            <li> <a href="News.html">NEWS </a></li>
            <li> <a href="About_us.html"> ABOUT US </a>  </li>
 		   <li> <a href="index.html"> HOME </a> </li>
           </ul>
       </header>
+		 
 		 <titolo>
 		 <h1> Incontri </h1>
 		 </titolo>
@@ -20,35 +22,35 @@
 	<incontri>
 <div>		
   <img class="img2" src="Immagini/Incontri/LOGO_BCBF.png" alt="BCBF" width="25%" height="auto">
-	<h1> Bologna Children Book Fair </h1>
+	<h1> <a href="Incontri_interno.html"> Bologna Children Book Fair </a> </h1>
   <p>Bologna Fiera, Bologna <br> 21-24 Marzo</p>
 	
 </div>	
 
 <div> 		
   <img class="img2" src="Immagini/Incontri/logo%20comicon.jpg" alt="Comicon" width="25%" height="auto">
-	<h1> Comicon </h1>
+	<h1> <a href="Incontri_interno.html">Comicon </a></h1>
  <p>Fiera d'Oltremare, Napoli <br> 22-25 Aprile</p>
   
 </div>
 		
 		<div> 		
   <img class="img2" src="Immagini/Incontri/arf_logo_footer.png" alt="arf" width="25%" height="auto">
-	<h1> Arf Festival </h1>
+	<h1> <a href="Incontri_interno.html">Arf Festival </a></h1>
  <p>Piazza Orazio Giustiniani, Roma <br> 13-15 Maggio</p>
   
 </div>
 		
 		<div> 		
   <img class="img2" src="Immagini/Incontri/andersen.png" alt="andersen" width="25%" height="auto">
-	<h1> Andersen Festival </h1>
+	<h1> <a href="Incontri_interno.html">Andersen Festival </a></h1>
  <p>Sestri Levante, Genova <br> 10-13 Giugno </p>
   
 </div>
 		
 			<div> 		
   <img class="img2" src="Immagini/Incontri/pescara%20comics%20logo.jpg" alt="pescara comics" width="25%" height="auto">
-	<h1> Pescara Comics </h1>
+	<h1> <a href="Incontri_interno.html">Pescara Comics </a></h1>
  <p>Centro Commerciale l'Arca, Pescara <br> 9-11 Settembre </p>
   
 </div>
@@ -63,22 +65,33 @@
 	</incontri>	 	 
 		 
 		  <newsletter>
- 	  <p> NEWSLETTER </p>
-      <p1> Your mail address... </p1>
-      <button class="button button5">  </button>
-      <p2> <br> Accetto le condizioni generali e la politica di riservatezza 
-     	<br> Informative sulla privacy</p2>
+ 	  <p1> NEWSLETTER </p1>
+		
+      <form>
+			 <p> <label> <input name="email" placeholder="La tua e-mail"/></label></p>
+		  <p2><input name="check" type="checkbox" value="Accetto" required="required">
+  <label> Accetto le condizioni generali e la politica di riservatezza e le informative sulla privacy</label></p2>
+		  <p4> <input onclick="myFunction()" type="submit" value="Invia"></p4>
+		 </form>
     </newsletter>
     
     <footer>
         <p> decstudio@gmail.com </p>
         <ul>
-        	<li> <img src="https://cdn.discordapp.com/attachments/971766283207057508/971781476653887548/237-01.png"> </li>
-            <li> <img src="https://cdn.discordapp.com/attachments/971766283207057508/971781477140402246/237-02.png"> </li>
-            <li> <img src="https://cdn.discordapp.com/attachments/971766283207057508/971781477434023947/237-03.png"> </li>
+			<li> <a href="dino_dino.html"><img src="Immagini/Logo_facebook_home.png" alt="Facebook"> </a></li>
+            <li> <a href="dino_dino.html"><img src="Immagini/Logo_Instagram_home.png" alt="instagram"> </a></li>
+            <li> <a href="dino_dino.html"><img src="Immagini/Logo_twitter_home.png" alt="twitter"> </a> </li>
        </ul> 
        <p1>© copyright 2022. All Rights Reserved. Dec Studio.
            <br>Privacy Policy | Cookie </p1>
+		
+		
               
    </footer>
+		 
+		 <script>
+function myFunction() {
+  alert("Grazie per averci inviato i tuoi dati :)");
+}
+</script>
     </body>

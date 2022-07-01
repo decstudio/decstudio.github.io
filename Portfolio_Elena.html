@@ -1,18 +1,20 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="Portfolio.css">
+	 <link rel="icon" type="image/x-icon" href="/Immagini/favicon2.png">
 	</head>
      <body>
-       <header>
+      <header>
          <ul>
-         <img class="img1" src="Immagini/Logo_dec_bianco.png" alt="logo" height="40" border="0"/>
-           <li> CONTATTI </li>
-		   <li> <a href="Incontri_interno.html">INCONTRI </a></li>
+        <a href="index.html"><img class="img1" src="Immagini/Logo_dec_bianco.png" alt="logo" height="40" border="0"/></a>
+           <li> <a href="Contatti.html"> CONTATTI </a> </li>
+		   <li> <a href="Incontri.html">INCONTRI </a></li>
            <li> <a href="News.html">NEWS </a></li>
            <li> <a href="About_us.html"> ABOUT US </a>  </li>
 		   <li> <a href="index.html"> HOME </a> </li>
           </ul>
       </header>
+        
         
      <section1>
          <p> <a href="Curriculum_Elena.html"> Curriculum </a> </p>
@@ -35,23 +37,34 @@
         <img src="Immagini/Immagini_Profilo_Elena/Illustrazione_Elena.jpg" alt="Illustrazione_Elena"  width="100%">
       </section4>
  
-    <newsletter>
- 	  <p> NEWSLETTER </p>
-      <p1> Your mail address... </p1>
-      <button class="button button5">  </button>
-      <p2> <br> Accetto le condizioni generali e la politica di riservatezza 
-     	<br> Informative sulla privacy</p2>
+     <newsletter>
+ 	  <p1> NEWSLETTER </p1>
+		
+      <form>
+			 <p> <label> <input name="email" placeholder="La tua e-mail"/></label></p>
+		  <p2><input name="check" type="checkbox" value="Accetto" required="required">
+  <label> Accetto le condizioni generali e la politica di riservatezza e le informative sulla privacy</label></p2>
+		  <p4> <input onclick="myFunction()" type="submit" value="Invia"></p4>
+		 </form>
     </newsletter>
     
     <footer>
         <p> decstudio@gmail.com </p>
         <ul>
-        		<li> <img src="Immagini/Logo_facebook_home.png" alt="Facebook"> </li>
-            <li> <img src="Immagini/Logo_Instagram_home.png" alt="instagram"> </li>
-            <li> <img src="Immagini/Logo_twitter_home.png" alt="twitter"> </li>
+			<li> <a href="dino_dino.html"><img src="Immagini/Logo_facebook_home.png" alt="Facebook"> </a></li>
+            <li> <a href="dino_dino.html"><img src="Immagini/Logo_Instagram_home.png" alt="instagram"> </a></li>
+            <li> <a href="dino_dino.html"><img src="Immagini/Logo_twitter_home.png" alt="twitter"> </a> </li>
        </ul> 
        <p1>© copyright 2022. All Rights Reserved. Dec Studio.
            <br>Privacy Policy | Cookie </p1>
+		
+		
               
    </footer>
+		 
+		 <script>
+function myFunction() {
+  alert("Grazie per averci inviato i tuoi dati :)");
+}
+</script>
     </body>

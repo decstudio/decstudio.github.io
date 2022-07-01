@@ -1,13 +1,14 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="About_us.css">
+	    <link rel="icon" type="image/x-icon" href="/Immagini/favicon2.png">
 	</head>
      <body>
-       <header>
+      <header>
          <ul>
-            <img class="img1" src="Immagini/Logo_dec_bianco.png" alt="logo" height="40" border="0"/>
-           <li> CONTATTI </li>
-		   <li> <a href="Incontri_interno.html">INCONTRI </a></li>
+        <a href="index.html"><img class="img1" src="Immagini/Logo_dec_bianco.png" alt="logo" height="40" border="0"/></a>
+           <li> <a href="Contatti.html"> CONTATTI </a> </li>
+		   <li> <a href="Incontri.html">INCONTRI </a></li>
            <li> <a href="News.html">NEWS </a></li>
            <li> <a href="About_us.html"> ABOUT US </a>  </li>
 		   <li> <a href="index.html"> HOME </a> </li>
@@ -15,7 +16,7 @@
       </header>
          
          <sect1>
-             <img src="https://cdn.discordapp.com/attachments/971766283207057508/987664728648204338/Logo_dec_nero.png" alt="logo_nero" height="100" border="0">
+             <img src="Immagini/Logo_dec_nero.png" alt="logo_nero" height="100" border="0">
              <p>Dopo aver creato diversi lavori per realizzare un portfolio personale, ci siamo rese conto di non avere uno spazio dove esporli, per questo motivo abbiamo deciso di creare una pagina web capace di unirci sia come gruppo ma anche di valorizzarci come singole autrici.
 <br>Come gruppo, nel sito saranno presenti lavori in stili differenti; come singolo, ogni autore avrà il suo spazio personale per dare risalto al proprio stile unico!</p>   
          </sect1>
@@ -24,18 +25,18 @@
          
          <div class="flex-container">
              <div> 
-                 <img src="https://cdn.discordapp.com/attachments/971766283207057508/987701594026049616/2.png" alt="Profilo_Deborah" height="120px">
+                 <img src="Immagini/Immagini_Profilo_Generale/Deborah_profilo_tondo.png" alt="Profilo_Deborah" height="120px">
                  <p> Sono una persona creativa, organizzata e capace di lavorare sia in gruppo che singolarmente. <br>
 					 Lavoro sia in digitale,  mediante l’utilizzo dei programmi del pacchetto Adobe  che analogicamente attraverso ...</p>
                  <p1><a href="Curriculum_Deborah.html">Curriculum</a></p1>
              </div>
              <div> 
-                 <img src="https://cdn.discordapp.com/attachments/971766283207057508/987701594290262016/3.png" alt="Profilo_Elena" height="120px">
-                 <p rows="6"> Salve, sono un’Illustratrice e una Graphic Design formata dall’accademia di Belle Arti di Napoli. Amo tutte le  espressioni artistiche e creative ma sprattutto imparare nuove skill. Lavoro meticolosamente...</p>
+                 <img src="Immagini/Immagini_Profilo_Generale/Elena_profilo_tondo.png" alt="Profilo_Elena" height="120px">
+                 <p rows="6"> Salve, sono un’Illustratrice e una Graphic Design formata dall’accademia di Belle Arti di Napoli. <br> Amo tutte le  espressioni artistiche e creative ma sprattutto imparare nuove skill. Lavoro meticolosamente...</p>
                  <p1> <a href="Curriculum_Elena.html">Curriculum</a></p1>
              </div>
              <div> 
-                 <img src="https://cdn.discordapp.com/attachments/971766283207057508/987701593791148082/1.png" alt="Profilo_Carmen" height="120px">
+                 <img src="Immagini/Immagini_Profilo_Generale/Carmen_profilo_tondo.png" alt="Profilo_Carmen" height="120px">
                  <p> Salve a tutti il mio nome è Carmen De Luca, disegno da quando ero piccola e visto che tutti dicevano che ero brava mi sono iscritta prima al Filiberto Menna per poi continuare gli studi all’Accademia di Belle Arti di Napoli...</p>
                  <p1> <a href="Curriculum_Carmen.html">Curriculum</a></p1>
              </div>
@@ -44,24 +45,33 @@
         </profili>
          
          <newsletter>
- 	  <p> NEWSLETTER </p>
-      <p1> Your mail address... </p1>
-      <button class="button button5">  </button>
-      <p2> <br> Accetto le condizioni generali e la politica di riservatezza 
-     	<br> Informative sulla privacy</p2>
+ 	  <p1> NEWSLETTER </p1>
+		
+      <form>
+			 <p> <label> <input name="email" placeholder="La tua e-mail"/></label></p>
+		  <p2><input name="check" type="checkbox" value="Accetto" required="required">
+  <label> Accetto le condizioni generali e la politica di riservatezza e le informative sulla privacy</label></p2>
+		  <p4> <input onclick="myFunction()" type="submit" value="Invia"></p4>
+		 </form>
     </newsletter>
     
     <footer>
         <p> decstudio@gmail.com </p>
         <ul>
-        	<li> <img src="Immagini/Logo_facebook_home.png" alt="Facebook"> </li>
-            <li> <img src="Immagini/Logo_Instagram_home.png" alt="instagram"> </li>
-            <li> <img src="Immagini/Logo_twitter_home.png" alt="twitter"> </li>
+			<li> <a href="dino_dino.html"><img src="Immagini/Logo_facebook_home.png" alt="Facebook"> </a></li>
+            <li> <a href="dino_dino.html"><img src="Immagini/Logo_Instagram_home.png" alt="instagram"> </a></li>
+            <li> <a href="dino_dino.html"><img src="Immagini/Logo_twitter_home.png" alt="twitter"> </a> </li>
        </ul> 
        <p1>© copyright 2022. All Rights Reserved. Dec Studio.
            <br>Privacy Policy | Cookie </p1>
+		
+		
               
    </footer>
+		 
+		 <script>
+function myFunction() {
+  alert("Grazie per averci inviato i tuoi dati :)");
+}
+</script>
     </body>
-    
-</html>

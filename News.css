@@ -16,7 +16,7 @@ html {
                     "footer"
             }
             
-            header {
+             header {
                 grid-area: header;
                 background-color: 262730;
                 position: sticky;
@@ -42,11 +42,19 @@ html {
                  float: right;
          		 padding-left: 20px;
                  border-right: 30px;
+				transition: all 0.3s ease-out;
                  }
             header li a {
+				width: 100%;
                 color: #f7fff7;
+				text-decoration: none;
+				
+				
                 }
-
+header li:hover {
+	background-color: #23967f;
+	transform: scale(1.1);
+	}
 section{
 	grid-area: sect1;
 	background-color: #f7fff7;
@@ -100,6 +108,13 @@ section a{
 	color: #f7fff7;
 	}
 
+p2 a{
+	text-decoration: none;
+	}
+section p2:hover{
+	background-color: #262730;
+}
+
 .spazio {
 	margin-top: 180px;
 }
@@ -116,63 +131,63 @@ newsletter {
                 background-color: #f7fff7;
             }
             
-            newsletter p  {
+            newsletter p1  {
+				position: absolute;
                 font-weight: bold;
-                text-align: center;
+               
+				display: flex;
+				justify-content: center;
                 font-size: 48px;
                 margin-top:100px;
-            }
+				left: 50%;
+				transform: translate(-50%)
+	}
             
-            newsletter p1 {
+            newsletter p input{
                 position: absolute;
                 border-style: solid;
-                Top: 170px;
-                left: 25%;
-                right:25%;
-                font-size: 15px;
+                Top: 190px;
+                left: 50%;
+				transform: translate(-50%);
+                                font-size: 15px;
                 border-radius: 25px;
                 border: 2px solid #262730;
                 padding: 10 10 10 25;
-                top: 170px;
-                height: 15px;
+                height: 40px;
+				width: 480px;
                 background-color: #fff;
+				margin-bottom: 0;
             }
             
-            .button {
-  			    background-color: #fff;
-                border: none;
-                border-color: #262730;
-                padding: 7px 7px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 15px;
-  			    margin: 2px 2px;
-  			    transition-duration: 0.4s;
-  			    cursor: pointer;
-                position: absolute;
-                left: 27%;
-                top: 220px;
-            }
             
-            .button5 {
-                background-color: white;
-                color: black;
-                border: 2px solid #262730;
-             }
-
-		   .button5:hover {
-               background-color: #262730;
-               color: white;
-			}
-
             newsletter p2 {
-                position: absolute;
-                top: 210px;
-                left: 29%;
+				position: absolute;
+				margin-top: 0px;
+				left: 50%;
+				transform: translate(-50%);
+				top: 245px;
                 font-size: 12px;
             }
+
+ p4 input{
+	 position: absolute;
+	color: #f7fff7;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 0px;
+	background-color: #23967f;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 50px;
+	top: 280px;
+	left: 50%;
+	transform: translate(-50%);
+	transition: all 0.3s ease-out;
+}
             
+p4 input:hover{
+	background-color: #262730;
+}
             footer {
                 grid-area: footer;
                 position:relative;
@@ -216,3 +231,4 @@ newsletter {
                 justify-content: center;
                 margin-top: 15px;
             }
+            
