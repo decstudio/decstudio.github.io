@@ -25,6 +25,8 @@
                 font-family: roboto;
                 font-size: 12px;
                 z-index: 1;
+			    overflow: hidden;
+			  overflow: hidden;
             }
             
             header ul {
